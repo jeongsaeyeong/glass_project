@@ -1,0 +1,44 @@
+button,
+a {
+    cursor: pointer;
+    background-color: var(--none);
+}
+
+body {
+    background-color: #8F6040;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 1000px;
+    height: 700px;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+.game_wrap {
+    background-image: url(../../img/background01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.none {
+    display: none !important;
+}
+
+input {
+    outline: none;
+}

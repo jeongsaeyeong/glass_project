@@ -1,0 +1,25 @@
+.Start_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        width: 626px;
+    }
+
+    a {
+        img {
+            width: 250px;
+        }
+    }
+}
+
+.Loading_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 250px;
+    }
+}

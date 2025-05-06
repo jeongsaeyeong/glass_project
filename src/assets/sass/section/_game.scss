@@ -1,0 +1,60 @@
+.Game_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    >div {
+        display: flex;
+        align-items: center;
+
+        >img {
+            width: 425px;
+            height: 295px;
+        }
+
+        .button_wrap {
+            >img {
+                width: 430px;
+            }
+
+            .btn {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                height: 418px;
+
+                >img {
+                    cursor: pointer;
+                    width: 130px;
+                }
+            }
+        }
+    }
+}
+
+.Made_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        width: 500px;
+    }
+
+    .glass {
+        width: 600px;
+        height: 340px;
+        object-fit: cover;
+    }
+
+    .btn_box {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+    
+        >button {
+            width: 240px;
+        }
+    }
+}
