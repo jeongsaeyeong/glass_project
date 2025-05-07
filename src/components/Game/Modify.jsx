@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import Info from '../../assets/img/text03.png'
+import Info from '../../assets/img/text02.png'
 import Yes from '../../assets/img/btn_yes.png'
 import No from '../../assets/img/btn_no.png'
 import HandOne from '../../assets/img/grass_hand01.png'
@@ -10,7 +10,7 @@ import MouthTwo from '../../assets/img/grass_mouth02.png'
 import FootOne from '../../assets/img/grass_foot01.png'
 import FootTwo from '../../assets/img/grass_foot02.png'
 
-const Made = () => {
+const Modify = () => {
     const params = useParams();
     const [Glass, setGlass] = useState(HandOne);
     const navigation = useNavigate();
@@ -31,24 +31,24 @@ const Made = () => {
         }
     }, [params.glass, params.made])
 
-    const GoingModify = () => {
-        navigation(`/modify/${params.glass}/${params.made}`);
+    const GoingEnd = () => {
+        navigation('/end')
     }
 
-    const GoingEnding = () => {
-        navigation(`/ending/${params.glass}/${params.made}`);
+    const onBack = () =>{
+        navigation(-1)
     }
 
     return (
         <div className='Made_wrap container game_wrap'>
-            <img src={Info} alt="" className="title" />
+            <img src={Info} alt="" className="modify_title" />
             <img src={Glass} alt="결과 이미지" className="glass" />
             <div className="btn_box">
-                <button className="yes" onClick={() => { GoingEnding() }}><img src={Yes} alt="" /></button>
-                <button className="no" onClick={() => { GoingModify() }}><img src={No} alt="" /></button>
+                <button className="yes" onClick={() => { GoingEnd() }}><img src={Yes} alt="" /></button>
+                <button className="no" onClick={() => { onBack() }}><img src={No} alt="" /></button>
             </div>
         </div>
     )
 }
 
-export default Made
+export default Modify
