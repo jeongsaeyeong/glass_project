@@ -6,6 +6,7 @@ import Hand from '../../assets/img/btn_hand.png'
 import Mouth from '../../assets/img/btn_mouth.png'
 import Foot from '../../assets/img/btn_foot.png'
 import { useNavigate, useParams } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const Game = () => {
     const params = useParams();
@@ -29,10 +30,17 @@ const Game = () => {
     return (
         <div className='Game_wrap container game_wrap'>
             <div>
-                <img
+                <motion.img
                     src={params.glass === '01' ? GlassOne : GlassTwo}
                     alt=""
-                    className={`glass-image ${animateGlass ? 'move-left' : ''}`}
+                    className="glass-image"
+                    animate={animateGlass ? { y: -30 } : {}}
+                    transition={{
+                        duration: 0.8,
+                        repeat: Infinity,
+                        repeatType: 'reverse', // 반대 방향으로 반복
+                        ease: 'easeInOut' // 부드럽게
+                    }}
                 />
                 <div className={`button_wrap ${showButton ? 'show' : 'hidden'}`}>
                     <img src={Info} alt="" className="info" />
