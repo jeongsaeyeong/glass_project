@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     >div {
         display: flex;
@@ -10,6 +11,20 @@
         >img {
             width: 425px;
             height: 295px;
+        }
+
+        .shadow {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            width: 450px;
+            transform: translateY(10%);
+            z-index: 0;
+        }
+
+        .glass-image {
+            position: relative;
+            z-index: 1;
         }
 
         .button_wrap {
@@ -31,9 +46,12 @@
             }
         }
     }
+
+
 }
 
-.Made_wrap {
+.Made_wrap,
+.End_wrap {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,6 +114,32 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+    }
+}
+
+.End_wrap {
+
+    .modify_title {
+        height: 127px;
+        object-fit: cover;
+    }
+
+    .btn_box {
+        display: flex;
+        justify-content: center;
+
+        button {
+            width: 450px;
+            height: 60px;
+            font-size: 18px;
+            color: var(--white);
+            background-color: #8F6040;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 5px;
         }
     }
 }
