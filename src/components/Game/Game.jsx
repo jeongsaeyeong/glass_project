@@ -23,7 +23,7 @@ const Game = () => {
     }, []);
 
     const Going = (root) => {
-        navigation(`/made/${params.glass}/${root}`);
+        navigation(`/loading/${params.glass}/${root}`);
     }
 
     return (

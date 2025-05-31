@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import emailjs from '@emailjs/browser'
 
 import HandOne from '../../assets/img/grass_hand01.png'
@@ -70,6 +70,7 @@ const Ending = () => {
                 <input type="hidden" name="image_url" value={window.location.origin + Glass} />
                 <input type="hidden" name="message" value="당신의 결과 이미지입니다!" />
                 <button type="submit">전송</button>
+                <Link to='/'>다시하기</Link>
             </form>
         </div>
     )

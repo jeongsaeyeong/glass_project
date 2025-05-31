@@ -13,10 +13,6 @@ import MouthTwo from '../../assets/img/grass_mouth02.png'
 import FootOne from '../../assets/img/grass_foot01.png'
 import FootTwo from '../../assets/img/grass_foot02.png'
 
-import handSound from '../../assets/sound/hand.m4a'
-import mouthSound from '../../assets/sound/mouth.m4a'
-import footSound from '../../assets/sound/foot.m4a'
-
 const Made = () => {
     const params = useParams();
     const navigation = useNavigate();
@@ -28,22 +24,16 @@ const Made = () => {
 
         if (params.glass === '01' && params.made === 'Hand') {
             selectedGlass = HandOne;
-            sound = handSound;
         } else if (params.glass === '02' && params.made === 'Hand') {
             selectedGlass = HandTwo;
-            sound = handSound;
         } else if (params.glass === '01' && params.made === 'Mouth') {
             selectedGlass = MouthOne;
-            sound = mouthSound;
         } else if (params.glass === '02' && params.made === 'Mouth') {
             selectedGlass = MouthTwo;
-            sound = mouthSound;
         } else if (params.glass === '01' && params.made === 'Foot') {
             selectedGlass = FootOne;
-            sound = footSound;
         } else if (params.glass === '02' && params.made === 'Foot') {
             selectedGlass = FootTwo;
-            sound = footSound;
         }
 
         if (selectedGlass) {

@@ -104,7 +104,7 @@
             color: var(--white);
         }
 
-        button {
+        button, a {
             width: 100px;
             height: 50px;
             background-color: #8F6040;
@@ -114,6 +114,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        button {
+            margin-right: 10px;
         }
     }
 }

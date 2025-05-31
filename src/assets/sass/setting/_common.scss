@@ -26,7 +26,7 @@ body {
 }
 
 .game_wrap {
-    background-image: url(../../img/background01.png);
+    background-image: url(../../img/background01.png) !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
