@@ -46,7 +46,7 @@ const Ending = () => {
             image_url: window.location.origin + Glass,
         }
 
-        emailjs.send('service_3u5gddi', 'template_tkqtgr6', templateParams, 'S1LpXzuzOfaNgWgyg')
+        emailjs.send('service_qyv335w', 'template_elzmpzc', templateParams, 'g7hoO6rFm6_g5l2AK')
             .then(() => {
                 alert('이메일이 전송되었습니다!')
             }, (error) => {

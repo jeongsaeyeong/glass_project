@@ -23,12 +23,10 @@ const Loading = () => {
         let timer
 
         if (params.made) {
-            // made 있을 때
             timer = setTimeout(() => {
                 navigate(`/made/${params.glass}/${params.made}`)
             }, 5000)
         } else {
-            // made 없을 때
             timer = setTimeout(() => {
                 const randomPath = Math.random() < 0.5 ? '/game/01' : '/game/02'
                 navigate(randomPath)

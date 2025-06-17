@@ -32,7 +32,7 @@ const Modify = () => {
     }, [params.glass, params.made])
 
     const GoingEnd = () => {
-        navigation('/end')
+        navigation(`/game/${params.glass}/${params.made}`)
     }
 
     const onBack = () =>{
